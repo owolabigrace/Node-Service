@@ -24,5 +24,5 @@ jobs:
             cd /opt/node-service
             git pull origin main
             npm install
-            pm2 restart node-service
+            pm2 restart node-service || pm2 start index.js --name node-service
           EOF
